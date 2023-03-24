@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * * main - Entry point
- * Description: 'prints _putchar to stdout'
+ * main - main function
+ * _putchar: print the alphabets putchar
  * Return: always 0
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -14,5 +15,6 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	Return(0);
+	_putchar('\n');
+return (0);
 }
