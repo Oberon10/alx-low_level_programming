@@ -16,4 +16,3 @@ int main(void)
 	printf("%s, %s\n", s0, s1);
 	return (0);
 }
-
