@@ -1,8 +1,11 @@
-#include"lists.h"
+#include "lists.h"
+
 /**
-*main-Write a function that frees a listint_t list
-*Returns: the size of the list that was free’d
-*/
+ * print_listint - prints all the elements of a linked list
+ * @h: linked list of type listint_t to print
+ *
+ * Return: number of nodes
+ */
 size_t free_listint_safe(listint_t **h)
 {
 	size_t len = 0;
