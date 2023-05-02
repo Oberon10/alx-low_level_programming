@@ -16,4 +16,3 @@ size_t print_listint(const listint_t *v)
 	}
 	return (num);
 }
-
