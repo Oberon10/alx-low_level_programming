@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_listint - prints all the elements of a linked list
- * @h: linked list of type listint_t to print
+ * free_listint_safe - frees a linked list
+ * @h: pointer to the first node in the linked list
  *
- * Return: number of nodes
+ * Return: number of elements in the freed list
  */
 size_t free_listint_safe(listint_t **h)
 {
@@ -35,5 +35,6 @@ size_t free_listint_safe(listint_t **h)
 	}
 
 	*h = NULL;
+
 	return (len);
 }
