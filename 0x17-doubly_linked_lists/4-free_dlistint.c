@@ -1,20 +1,22 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - Adds a new node at the end
- * @head: struct
- * @n: const int
- * Return: dlistint_t
+ * free_dlistint - frees a dlistint_t list
+ *
+ * @head: head of the list
+ * Return: no return
  */
-
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *list;
+	dlistint_t *tmp;
 
-	while (head)
+	if (head != NULL)
+		while (head->prev != NULL)
+			head = head->prev;
+
+	while ((tmp = head) != NULL)
 	{
-		list = head;
 		head = head->next;
-		free(list);
+		free(tmp);
 	}
 }
